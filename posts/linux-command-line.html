@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Linux Command Line - Vamsi's Tech Blog</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vamsi's Tech Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <div class="post-header">
+                <h2 class="post-title">Mastering Linux Command Line</h2>
+                <p class="post-meta">Published on November 12, 2025</p>
+            </div>
+
+            <div class="post-content">
+                <p>The Linux command line is a powerful tool that every developer, system administrator, and DevOps engineer should master. While graphical interfaces are convenient, the command line offers unmatched power, flexibility, and efficiency for managing systems and automating tasks.</p>
+
+                <h3>Why Learn the Command Line?</h3>
+                <p>Understanding the Linux command line provides several advantages:</p>
+                <ul>
+                    <li>Faster execution of repetitive tasks through scripting</li>
+                    <li>Remote server management via SSH</li>
+                    <li>Better understanding of how systems work</li>
+                    <li>Ability to troubleshoot issues effectively</li>
+                    <li>Automation of complex workflows</li>
+                </ul>
+
+                <h3>Essential File and Directory Commands</h3>
+
+                <h4>Navigation and Listing</h4>
+                <ul>
+                    <li><code>pwd</code> - Print working directory</li>
+                    <li><code>ls</code> - List directory contents (<code>ls -la</code> for detailed view)</li>
+                    <li><code>cd</code> - Change directory (<code>cd ..</code> to go up one level)</li>
+                    <li><code>tree</code> - Display directory structure as a tree</li>
+                </ul>
+
+                <h4>File Operations</h4>
+                <ul>
+                    <li><code>touch file.txt</code> - Create an empty file</li>
+                    <li><code>cp source dest</code> - Copy files or directories</li>
+                    <li><code>mv old new</code> - Move or rename files</li>
+                    <li><code>rm file</code> - Remove files (<code>rm -rf dir</code> for directories)</li>
+                    <li><code>mkdir dirname</code> - Create directories</li>
+                    <li><code>rmdir dirname</code> - Remove empty directories</li>
+                </ul>
+
+                <h4>Viewing and Editing Files</h4>
+                <ul>
+                    <li><code>cat file</code> - Display file contents</li>
+                    <li><code>less file</code> - View file with pagination</li>
+                    <li><code>head -n 10 file</code> - Show first 10 lines</li>
+                    <li><code>tail -n 10 file</code> - Show last 10 lines</li>
+                    <li><code>nano file</code> - Simple text editor</li>
+                    <li><code>vim file</code> - Powerful text editor</li>
+                </ul>
+
+                <h3>Text Processing and Search</h3>
+
+                <h4>Searching</h4>
+                <ul>
+                    <li><code>grep "pattern" file</code> - Search for patterns in files</li>
+                    <li><code>find /path -name "*.txt"</code> - Find files by name</li>
+                    <li><code>locate filename</code> - Quick file search using database</li>
+                    <li><code>which command</code> - Find command location</li>
+                </ul>
+
+                <h4>Text Manipulation</h4>
+                <ul>
+                    <li><code>sed 's/old/new/g' file</code> - Stream editor for text transformation</li>
+                    <li><code>awk '{print $1}' file</code> - Pattern scanning and processing</li>
+                    <li><code>cut -d',' -f1 file.csv</code> - Extract columns from delimited files</li>
+                    <li><code>sort file</code> - Sort lines of text</li>
+                    <li><code>uniq file</code> - Remove duplicate lines</li>
+                    <li><code>wc -l file</code> - Count lines, words, characters</li>
+                </ul>
+
+                <h3>System Information and Management</h3>
+
+                <h4>System Information</h4>
+                <ul>
+                    <li><code>uname -a</code> - System information</li>
+                    <li><code>df -h</code> - Disk space usage</li>
+                    <li><code>du -sh *</code> - Directory size</li>
+                    <li><code>free -h</code> - Memory usage</li>
+                    <li><code>top</code> or <code>htop</code> - Process monitoring</li>
+                    <li><code>uptime</code> - System uptime and load</li>
+                </ul>
+
+                <h4>Process Management</h4>
+                <ul>
+                    <li><code>ps aux</code> - List all processes</li>
+                    <li><code>kill PID</code> - Terminate a process</li>
+                    <li><code>killall name</code> - Kill processes by name</li>
+                    <li><code>jobs</code> - List background jobs</li>
+                    <li><code>bg</code> and <code>fg</code> - Background and foreground jobs</li>
+                    <li><code>nohup command &</code> - Run command immune to hangups</li>
+                </ul>
+
+                <h3>Networking Commands</h3>
+                <ul>
+                    <li><code>ping host</code> - Test network connectivity</li>
+                    <li><code>curl url</code> - Transfer data from URLs</li>
+                    <li><code>wget url</code> - Download files from the web</li>
+                    <li><code>ssh user@host</code> - Secure shell login</li>
+                    <li><code>scp file user@host:/path</code> - Secure file copy</li>
+                    <li><code>netstat -tuln</code> - Network statistics</li>
+                    <li><code>ip addr</code> - Show IP addresses</li>
+                </ul>
+
+                <h3>File Permissions and Ownership</h3>
+                <ul>
+                    <li><code>chmod 755 file</code> - Change file permissions</li>
+                    <li><code>chown user:group file</code> - Change ownership</li>
+                    <li><code>ls -l</code> - View detailed file permissions</li>
+                </ul>
+
+                <h3>Powerful Command Line Features</h3>
+
+                <h4>Pipes and Redirection</h4>
+                <ul>
+                    <li><code>command1 | command2</code> - Pipe output to another command</li>
+                    <li><code>command > file</code> - Redirect output to file (overwrite)</li>
+                    <li><code>command >> file</code> - Append output to file</li>
+                    <li><code>command < file</code> - Use file as input</li>
+                    <li><code>command 2>&1</code> - Redirect stderr to stdout</li>
+                </ul>
+
+                <h4>Command Substitution</h4>
+                <ul>
+                    <li><code>$(command)</code> - Use command output as argument</li>
+                    <li><code>`command`</code> - Alternative syntax for substitution</li>
+                </ul>
+
+                <h4>Wildcards</h4>
+                <ul>
+                    <li><code>*</code> - Match any characters</li>
+                    <li><code>?</code> - Match single character</li>
+                    <li><code>[abc]</code> - Match any character in brackets</li>
+                    <li><code>{txt,pdf}</code> - Match any pattern in braces</li>
+                </ul>
+
+                <h3>Package Management</h3>
+
+                <h4>Debian/Ubuntu (apt)</h4>
+                <ul>
+                    <li><code>apt update</code> - Update package lists</li>
+                    <li><code>apt upgrade</code> - Upgrade packages</li>
+                    <li><code>apt install package</code> - Install packages</li>
+                    <li><code>apt remove package</code> - Remove packages</li>
+                </ul>
+
+                <h4>Red Hat/CentOS (yum/dnf)</h4>
+                <ul>
+                    <li><code>yum update</code> - Update packages</li>
+                    <li><code>yum install package</code> - Install packages</li>
+                    <li><code>yum remove package</code> - Remove packages</li>
+                </ul>
+
+                <h3>Shell Scripting Basics</h3>
+                <p>Automate tasks by creating shell scripts. A simple example:</p>
+                <ul>
+                    <li>Start with <code>#!/bin/bash</code> shebang</li>
+                    <li>Use variables: <code>VAR="value"</code></li>
+                    <li>Use conditionals: <code>if [ condition ]; then ... fi</code></li>
+                    <li>Use loops: <code>for item in list; do ... done</code></li>
+                    <li>Make executable: <code>chmod +x script.sh</code></li>
+                </ul>
+
+                <h3>Tips for Mastery</h3>
+                <ul>
+                    <li>Use <code>man command</code> to read manual pages</li>
+                    <li>Use <code>command --help</code> for quick help</li>
+                    <li>Practice regularly with real tasks</li>
+                    <li>Learn keyboard shortcuts (Ctrl+C, Ctrl+Z, Ctrl+R)</li>
+                    <li>Customize your shell with aliases and functions</li>
+                    <li>Use tab completion to save time</li>
+                    <li>Keep a command cheat sheet handy</li>
+                </ul>
+
+                <h3>Conclusion</h3>
+                <p>Mastering the Linux command line is a journey that pays dividends throughout your career. Start with the basics, practice regularly, and gradually expand your repertoire. The command line's power lies not just in individual commands but in how you combine them to solve complex problems efficiently. Remember, the best way to learn is by doing—so open a terminal and start experimenting!</p>
+
+                <a href="../index.html" class="back-link">← Back to Blog</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vamsi's Tech Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
