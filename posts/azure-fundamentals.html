@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Microsoft Azure - Vamsi's Tech Blog</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vamsi's Tech Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <div class="post-header">
+                <h2 class="post-title">Getting Started with Microsoft Azure</h2>
+                <p class="post-meta">Published on November 13, 2025</p>
+            </div>
+
+            <div class="post-content">
+                <p>Microsoft Azure is one of the leading cloud computing platforms, offering a comprehensive suite of services for building, deploying, and managing applications. Whether you're a developer, IT professional, or business leader, understanding Azure is essential in today's cloud-first world.</p>
+
+                <h3>What is Microsoft Azure?</h3>
+                <p>Azure is a cloud computing platform that provides infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) offerings. It supports a wide range of programming languages, frameworks, and tools, making it a versatile choice for organizations of all sizes.</p>
+
+                <h3>Core Azure Services</h3>
+
+                <h4>Compute Services</h4>
+                <ul>
+                    <li><strong>Virtual Machines:</strong> IaaS offering for running Windows or Linux VMs</li>
+                    <li><strong>App Service:</strong> PaaS for hosting web apps, mobile backends, and APIs</li>
+                    <li><strong>Azure Functions:</strong> Serverless compute for event-driven applications</li>
+                    <li><strong>Azure Kubernetes Service (AKS):</strong> Managed Kubernetes for container orchestration</li>
+                    <li><strong>Container Instances:</strong> Run containers without managing servers</li>
+                </ul>
+
+                <h4>Storage Services</h4>
+                <ul>
+                    <li><strong>Blob Storage:</strong> Object storage for unstructured data</li>
+                    <li><strong>File Storage:</strong> Managed file shares accessible via SMB protocol</li>
+                    <li><strong>Queue Storage:</strong> Message queuing for application communication</li>
+                    <li><strong>Table Storage:</strong> NoSQL key-value store</li>
+                    <li><strong>Disk Storage:</strong> Persistent disks for virtual machines</li>
+                </ul>
+
+                <h4>Database Services</h4>
+                <ul>
+                    <li><strong>Azure SQL Database:</strong> Managed relational database service</li>
+                    <li><strong>Cosmos DB:</strong> Globally distributed, multi-model database</li>
+                    <li><strong>Azure Database for PostgreSQL/MySQL:</strong> Managed open-source databases</li>
+                    <li><strong>Azure Cache for Redis:</strong> In-memory data store</li>
+                </ul>
+
+                <h4>Networking</h4>
+                <ul>
+                    <li><strong>Virtual Network:</strong> Isolated network in Azure</li>
+                    <li><strong>Load Balancer:</strong> Distribute traffic across resources</li>
+                    <li><strong>Application Gateway:</strong> Web traffic load balancer with WAF</li>
+                    <li><strong>VPN Gateway:</strong> Secure cross-premises connectivity</li>
+                    <li><strong>Azure DNS:</strong> Host DNS domains in Azure</li>
+                </ul>
+
+                <h3>Getting Started Steps</h3>
+
+                <h4>1. Create an Azure Account</h4>
+                <p>Start with a free Azure account that includes $200 credit for 30 days and 12 months of popular free services. This allows you to explore and experiment without commitment.</p>
+
+                <h4>2. Understand Resource Organization</h4>
+                <p>Azure organizes resources hierarchically:</p>
+                <ul>
+                    <li><strong>Management Groups:</strong> Organize multiple subscriptions</li>
+                    <li><strong>Subscriptions:</strong> Billing and access control boundary</li>
+                    <li><strong>Resource Groups:</strong> Logical containers for related resources</li>
+                    <li><strong>Resources:</strong> Individual services like VMs, databases, etc.</li>
+                </ul>
+
+                <h4>3. Learn the Azure Portal</h4>
+                <p>The Azure Portal is a web-based interface for managing Azure resources. Familiarize yourself with:</p>
+                <ul>
+                    <li>Dashboard customization</li>
+                    <li>Resource creation wizards</li>
+                    <li>Azure Cloud Shell for command-line access</li>
+                    <li>Cost Management and Billing tools</li>
+                </ul>
+
+                <h4>4. Explore Azure CLI and PowerShell</h4>
+                <p>For automation and scripting, learn to use:</p>
+                <ul>
+                    <li>Azure CLI for cross-platform command-line management</li>
+                    <li>Azure PowerShell for Windows-centric automation</li>
+                    <li>ARM templates for infrastructure as code</li>
+                </ul>
+
+                <h3>Best Practices for Azure</h3>
+
+                <h4>Security</h4>
+                <ul>
+                    <li>Enable Multi-Factor Authentication (MFA) for all accounts</li>
+                    <li>Use Azure Active Directory for identity management</li>
+                    <li>Implement Role-Based Access Control (RBAC)</li>
+                    <li>Enable Azure Security Center for threat protection</li>
+                    <li>Use Azure Key Vault for secrets management</li>
+                </ul>
+
+                <h4>Cost Optimization</h4>
+                <ul>
+                    <li>Right-size your resources based on actual usage</li>
+                    <li>Use reserved instances for predictable workloads</li>
+                    <li>Implement auto-scaling to match demand</li>
+                    <li>Set up budget alerts and cost analysis</li>
+                    <li>Use Azure Advisor recommendations</li>
+                </ul>
+
+                <h4>Reliability</h4>
+                <ul>
+                    <li>Design for high availability across availability zones</li>
+                    <li>Implement backup and disaster recovery strategies</li>
+                    <li>Use Azure Monitor for comprehensive observability</li>
+                    <li>Test failover procedures regularly</li>
+                    <li>Document your architecture and dependencies</li>
+                </ul>
+
+                <h3>Common Use Cases</h3>
+
+                <h4>Web Application Hosting</h4>
+                <p>Deploy web applications using Azure App Service with built-in scaling, security, and CI/CD integration.</p>
+
+                <h4>Data Analytics</h4>
+                <p>Use Azure Synapse Analytics, Data Lake, and Power BI for comprehensive data analysis and visualization.</p>
+
+                <h4>Machine Learning</h4>
+                <p>Leverage Azure Machine Learning for building, training, and deploying ML models at scale.</p>
+
+                <h4>IoT Solutions</h4>
+                <p>Build IoT applications with Azure IoT Hub, IoT Central, and Azure Digital Twins.</p>
+
+                <h3>Learning Resources</h3>
+                <ul>
+                    <li>Microsoft Learn: Free, interactive learning paths</li>
+                    <li>Azure Documentation: Comprehensive technical guides</li>
+                    <li>Azure Certifications: Validate your skills officially</li>
+                    <li>Azure Friday: Weekly video series on YouTube</li>
+                    <li>Azure Community: Forums and user groups</li>
+                </ul>
+
+                <h3>Conclusion</h3>
+                <p>Microsoft Azure offers a powerful, flexible cloud platform for any workload. Start with the free tier, experiment with core services, and gradually build your expertise. Focus on understanding fundamental concepts like resource organization, security, and cost management before diving into advanced services. The cloud journey is continuous—embrace learning, stay curious, and don't be afraid to experiment in your development environment.</p>
+
+                <a href="../index.html" class="back-link">← Back to Blog</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vamsi's Tech Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
